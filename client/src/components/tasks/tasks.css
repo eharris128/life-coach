@@ -1,7 +1,7 @@
 #form {
   margin: 0.5rem auto 0.1rem auto;
   border: thin solid black;
-  width: 40rem;
+  /* width: 40rem; */
 }
 
 .label > input, label > select {
@@ -9,7 +9,7 @@
 }
 
 .current-tasks {
-  width: 40rem;
+  /* width: 40rem; */
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -20,25 +20,28 @@
 
 .task-list-div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .task-text {
   border: thin solid black;
   display: flex;
   justify-content: flex-start;
-  width: 40rem;
+  /* width: 40rem; */
   margin: 0.5rem 0.5rem 0.5rem 0;
-  /* height: auto; */
 }
 
 form input {
   font-size:1.3rem;
+  background-color: #9EF4E6; 
 }
 
 form select {
   font-size: 1.3rem;
+  background-color: #9EF4E6; 
 }
+
 .label {
   font-family: 'Fira Sans', sans-serif !important;
   font-size: 1.5rem;
@@ -47,7 +50,7 @@ form select {
 .task {
   font-family: 'Fira Sans', sans-serif !important;
   text-align: start;
-  padding: 0.2rem;
+  padding: 0.4rem;
   font-size: 1.5rem;
 }
 
@@ -55,29 +58,34 @@ form select {
   margin: 0;
   height: 1.5rem;
   padding-bottom: 1.7rem;
-
 }
 
 .dropdown {
   display: inline-block;
   padding: 1rem;
 }
+
 .task-label {
   display: inline-block;
   padding-top: 1rem;
   padding-bottom: 0.4rem;
 }
-/*.current-tasks.task {
 
-
-
-}*/
-/*.current-tasks.task-note {
-padding: 20px;
+.task-header {
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  margin-left: 0.8rem;
+  font-family: 'Bitter', serif;
 }
 
-.current-tasks.delete-task {
-   display: inline-block;
-  text-align: right;
-}*/
+@media (min-width: 768px) {
+  #form {
+    width: 30rem;
+  }
+  .task-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 
+}
